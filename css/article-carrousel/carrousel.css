@@ -1,0 +1,43 @@
+@import '../components/thumbnail.css';
+@import '../components/small-components.css';
+.carrousel {
+    grid-area: carrousel;
+    margin-bottom: 50px;
+}
+
+.carrousel__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "one two three four";
+    gap: 20px;
+}
+
+.carrousel__one {
+    grid-area: one;
+}
+
+.carrousel__two {
+    grid-area: two;
+}
+
+.carrousel__three {
+    grid-area: three;
+}
+
+.carrousel__four {
+    grid-area: four;
+}
+
+@media only screen and (max-width: 768px) {
+    .carrousel__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "one two" "three four";
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .carrousel__grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: "one" "two" "three" "four";
+    }
+}

@@ -1,0 +1,26 @@
+.thumbnail {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    grid-area: thumbnail;
+    transition: transform 300ms;
+    margin-bottom: 10px;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail__image {
+    width: 100%;
+}
+
+.thumbnail__text {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 4px 0;
+}
+
+.thumbnail__teaser {
+    font-size: 0.9em;
+    color: hsl(0, 0%, 60%);
+    margin: 4px 0;
+}

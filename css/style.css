@@ -1,0 +1,18 @@
+@import './article-carrousel/carrousel.css';
+@import './latest-news/latest-news.css';
+@import './comments/comments.css';
+@import './footer/main-footer.css';
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+}

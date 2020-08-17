@@ -1,0 +1,41 @@
+.profiles {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.profile__image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile__imageAuthor {
+    width: 100%;
+}
+
+.profile__name {
+    margin: 0 0 5px;
+    font-size: 0.9em;
+}
+
+.profile__contact {
+    display: flex;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 768px) {
+    .profiles {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}

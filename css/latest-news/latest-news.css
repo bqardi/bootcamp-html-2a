@@ -1,0 +1,114 @@
+@import '../components/thumbnail.css';
+@import '../components/small-components.css';
+@import './latest.css';
+.latestNews {
+    grid-area: latestnews;
+    margin-bottom: 50px;
+}
+
+.latestNews__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 20px;
+}
+
+.latestNews__header {
+    grid-column: 2/5;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.latestNews__headerLink {
+    display: flex;
+}
+
+.latestNews__one {
+    grid-column: 1/2;
+}
+
+.latestNews__two {
+    grid-column: 2/3;
+}
+
+.latestNews__three {
+    grid-column: 3/4;
+}
+
+.latestNews__four {
+    grid-column: 4/5;
+}
+
+.latestNews__one--spanAll {
+    grid-row: 1/4;
+    /* Kan ikke finde en feature der span'er hele vejen til slutningen
+    (i tilfælde hvor indholdet bliver dynamisk kreeret), ØV!
+    Kunne have været rart med noget alá grid-row: 1/span all;*/
+}
+
+@media only screen and (max-width: 768px) {
+    .latestNews__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0 10px;
+    }
+    .latestNews__one {
+        grid-column: 1/4;
+    }
+    .latestNews__two {
+        grid-column: 1/2;
+    }
+    .latestNews__three {
+        grid-column: 2/3;
+    }
+    .latestNews__four {
+        grid-column: 3/4;
+    }
+    .latestNews__one--spanAll {
+        grid-row: unset;
+    }
+    .latestNews__header {
+        grid-column: 1/4;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .latestNews__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .latestNews__one {
+        grid-column: 1/3;
+    }
+    .latestNews__two {
+        grid-column: 1/2;
+    }
+    .latestNews__three {
+        grid-column: 2/3;
+    }
+    .latestNews__four {
+        grid-column: auto;
+        order: 1;
+    }
+    .latestNews__header {
+        grid-column: 1/3;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .latestNews__grid {
+        grid-template-columns: 1fr;
+    }
+    .latestNews__one {
+        grid-column: 1/2;
+    }
+    .latestNews__two {
+        grid-column: 1/2;
+    }
+    .latestNews__three {
+        grid-column: 1/2;
+    }
+    .latestNews__four {
+        grid-column: 1/2;
+    }
+    .latestNews__header {
+        grid-column: 1/2;
+    }
+}

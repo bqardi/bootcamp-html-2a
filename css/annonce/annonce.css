@@ -1,0 +1,32 @@
+.advertisement {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px 0 50px;
+    position: relative;
+}
+
+.advertisement__text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    right: -36px;
+    font-size: 0.8em;
+    margin: 0;
+    color: hsl(0, 0%, 80%);
+    transform: rotate(90deg);
+    transform-origin: 50%;
+    font-weight: 300;
+}
+
+.advertisement__link {
+    transition: filter 300ms;
+}
+
+.advertisement__link:hover {
+    filter: brightness(1.1);
+}
+
+.advertisement__image {
+    width: 100%;
+}

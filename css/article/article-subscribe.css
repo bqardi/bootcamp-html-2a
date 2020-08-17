@@ -1,0 +1,44 @@
+.subscribe {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.subscribe__teaser {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0 0 4px;
+    text-align: center;
+}
+
+.subscribe__toArticle {
+    padding: 10px 70px;
+    background-color: hsl(0, 92%, 47%);
+    border-radius: 4px;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    margin: 30px 0 4px;
+    transition: background-color 300ms;
+}
+
+.subscribe__toArticle:hover {
+    background-color: hsl(0, 100%, 60%);
+}
+
+.subscribe__hasSubscription {
+    color: hsl(0, 0%, 60%);
+}
+
+.hasSubscription__login {
+    color: hsl(0, 0%, 16%);
+    font-weight: 700;
+    transition: color 300ms;
+}
+
+.hasSubscription__login:hover {
+    color: hsl(0, 0%, 40%);
+}

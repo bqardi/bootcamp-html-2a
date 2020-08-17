@@ -1,0 +1,20 @@
+@import './article-header.css';
+@import './article-figure.css';
+@import '../components/colophon.css';
+@import '../components/icon-link.css';
+@import '../components/profile.css';
+@import '../components/byline.css';
+@import './article-continued.css';
+@import '../components/small-components.css';
+.mainArticle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". teaser teaser teaser" "cover cover cover cover" "colophon colophon colophon colophon" "byline content content content" ". subscribtionRequired subscribtionRequired subscribtionRequired";
+}
+
+@media only screen and (max-width: 768px) {
+    .mainArticle {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "teaser teaser teaser" "cover cover cover" "colophon colophon colophon" "byline byline byline" "content content content" "subscribtionRequired subscribtionRequired subscribtionRequired";
+    }
+}

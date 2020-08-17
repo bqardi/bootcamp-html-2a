@@ -1,0 +1,5 @@
+.dottedLine {
+    border: none;
+    border-top: 1px dotted hsl(0, 0%, 60%);
+    margin: 10px 0 15px;
+}

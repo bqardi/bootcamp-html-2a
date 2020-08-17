@@ -1,0 +1,61 @@
+@import '../components/newsletter.css';
+.footer {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(0, 0%, 40%);
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title {
+    margin: 12px 0 10px;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 1px hsl(0, 0%, 95%);
+}
+
+.footer__text {
+    margin: 0 0 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: hsl(0, 0%, 50%);
+}
+
+.footer__newspaper {
+    position: absolute;
+    top: -40px;
+    width: 100%;
+    max-width: 220px;
+    box-shadow: 1px 3px 5px 0 hsl(0, 0%, 60%);
+}
+
+.footer__link {
+    margin: 3px 0;
+    font-size: 0.8em;
+    color: hsl(0, 0%, 16%);
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.footer__iconLink {
+    margin: 3px 0;
+    font-size: 1em;
+    color: hsl(0, 0%, 16%);
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.footer__link:hover {
+    color: hsl(0, 0%, 60%);
+}
+
+.footer__link--space {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 512px) {
+    .footer {
+        margin: 20px 0;
+    }
+    .footer__newspaper {
+        position: static;
+    }
+}

@@ -1,30 +1,505 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Brians Ostebiks</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dagbladet Information blev stiftet natten til den 5. maj 1945. Resten af historien er daglig virkelighed, som bedst følges med et abonnement. Kom og prøv!">
+    <title>Information</title>
+    <link rel="preload" href="./css/header/main-header.css">
+    <link rel="preload" href="./css/annonce/annonce.css">
+    <link rel="preload" href="./css/article/article-main.css">
+    <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="preload stylesheet" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./css/style.css"></noscript>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
+
 <body>
 
-		<article class="mainArticle">
-			<header class="mainArticle__articleHeader">
-				<h1 class="mainArticle__heading">Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
-				<p class="mainArticle__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis at hic! Vel iste minima perspiciatis nulla debitis ratione accusantium vitae velit corrupti ex, a veritatis excepturi quaerat, doloremque suscipit?</p>
-			</header>
-			<figure class="coverPhoto">
-				
-				<figcaption class="coverPhoto__caption">
-					<p class="caption__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum optio provident amet libero aspernatur mollitia architecto soluta, reprehenderit nisi ipsam. Sint laborum deleniti quas saepe quod at laudantium quibusdam.</p>
-					<address class="caption__photographer">
-						<img src="http://via.placeholder.com/12.png" alt="camera icon">
-						Peter Nygaard Christensen
-					</address>
-				</figcaption>
-				<img src="https://via.placeholder.com/671x448.png" alt="Putin bruger ikke gas!?" class="coverPhoto__image">
-			</figure>
-		</article>
+    <header class="mainHeader">
+        <section class="header">
+            <nav class="header__nav header__nav--left">
+                <a class="iconLink" href="#">
+                    <svg class="iconLink__icon iconLink__icon--black iconLink__icon--larger" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path></svg>
+                    <span class="iconLink__text">MENU</span>
+                </a>
+                <a class="iconLink iconLink--spaceLeft" href="#" aria-label="Search">
+                    <svg class="iconLink__icon iconLink__icon--black iconLink__icon--larger" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path></svg>
+                </a>
+            </nav>
+            <a class="header__logoLink" href="./index.html">
+                <img class="header__logo" src="./images/logo.jpg" alt="Logo">
+            </a>
+            <nav class="header__nav header__nav--right">
+                <a class="iconLink" href="#">
+                    <span class="iconLink__text">LOG IND</span>
+                    <svg class="iconLink__icon iconLink__icon--black iconLink__icon--larger" viewBox="0 0 24 24"><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"></path></svg>
+                </a>
+            </nav>
+        </section>
+        <section class="mainMenu">
+            <nav class="menu">
+                <a class="menu__item" href="#">Nyhedsbreve</a>
+                <a class="menu__item" href="#">Podcast</a>
+                <a class="menu__item menu__item--highlight" href="#">Køb abonnement</a>
+            </nav>
+        </section>
+    </header>
+    <div class="wrapper">
+        <section class="advertisement">
+            <a class="advertisement__link" href="#" aria-label="Til annoncen">
+                <h4 class="advertisement__text">Annonce</h4>
+                <img class="advertisement__image" src="./images/advertisement.jpg" alt="Annonce">
+            </a>
+        </section>
+        <main>
+            <article class="mainArticle">
+                <header class="mainArticle__articleHeader">
+                    <section class="colophon">
+                        <p class="colophon__one colophon__nowrap">
+                            <span class="colophon--red colophon--small colophon__SpaceRight">Abonnement</span>
+                            <span class="colophon--gray colophon--small">LÆSETID: 7 MIN.</span>
+                        </p>
+                    </section>
+                    <h1 class="mainArticle__heading">Gas er et godt politisk våben. Det er bare ikke Putin, der bruger det</h1>
+                    <p class="mainArticle__summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis at hic! Vel iste minima perspiciatis nulla debitis ratione accusantium vitae velit corrupti ex, a veritatis excepturi quaerat, doloremque suscipit?</p>
+                </header>
+                <figure class="coverPhoto">
+                    <figcaption class="coverPhoto__caption">
+                        <p class="caption__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum optio provident amet libero aspernatur mollitia architecto soluta, reprehenderit nisi ipsam. Sint laborum deleniti quas saepe quod at laudantium quibusdam.</p>
+                        <address class="caption__photographer caption__photographer--right">
+                            <a href="#" class="iconLink">
+                                <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 24 24"><path d="M4,4H7L9,2H15L17,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z"></path></svg>
+                                <span class="iconLink__text">Peter Nygaard Christensen</span>
+                            </a>
+                        </address>
+                    </figcaption>
+                    <img class="coverPhoto__image" src="./images/article-image.jpg" alt="Putin bruger ikke gas!?">
+                </figure>
+                <section class="byline">
+                    <header class="colophon">
+                        <h2 class="colophon__one colophon--red colophon--large colophon--mid">Udland</h2>
+                    </header>
+                    <hr class="dottedLine">
+                    <section class="profiles">
+                        <section class="profile">
+                            <div class="profile__image">
+                                <img class="profile__imageAuthor" src="./images/jakob-stein.jpg" alt="Profil">
+                            </div>
+                            <section class="profile__content">
+                                <h3 class="profile__name">Jakob Stein</h3>
+                                <address class="profile__contact">
+                                    <a href="#" class="iconLink iconLink--spaceRight">
+                                        <svg class="iconLink__icon iconLink__icon--white iconLink__icon--backGray" viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path></svg>
+                                        <span class="iconLink__text">Email</span>
+                                    </a>
+                                    <a href="#" class="iconLink">
+                                        <svg class="iconLink__icon iconLink__icon--white iconLink__icon--backTwitter" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg>
+                                        <span class="iconLink__text">Twitter</span>
+                                    </a>
+                                </address>
+                            </section>
+                        </section>
+                        <section class="profile">
+                            <section class="profile__content">
+                                <h3 class="profile__name">Peter Nygaard Christensen</h3>
+                                <address class="profile__contact">
+                                    <a href="#" class="iconLink">
+                                        <svg class="iconLink__icon iconLink__icon--white iconLink__icon--backGray" viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path></svg>
+                                        <span class="iconLink__text">Email</span>
+                                    </a>
+                                </address>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+                <section class="articleContinued">
+                    <header class="colophon colophon--spaceBetween">
+                        <div class="colophon__one colophon--black colophon--small colophon--mid">
+                            <svg class="colophon__icon colophon__iconGray colophon__SpaceRight" viewBox="0 0 24 24"><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path></svg>                            7. maj 2018
+                        </div>
+                        <a href="#comments" class="colophon__four colophon__link colophon--black colophon--small colophon--mid">
+                            <svg class="colophon__icon colophon__iconGray colophon__SpaceRight" viewBox="0 0 24 24"><path d="M9.5,4C5.36,4 2,6.69 2,10C2,11.89 3.08,13.56 4.78,14.66L4,17L6.5,15.5C7.39,15.81 8.37,16 9.41,16C9.15,15.37 9,14.7 9,14C9,10.69 12.13,8 16,8C16.19,8 16.38,8 16.56,8.03C15.54,5.69 12.78,4 9.5,4M6.5,6.5A1,1 0 0,1 7.5,7.5A1,1 0 0,1 6.5,8.5A1,1 0 0,1 5.5,7.5A1,1 0 0,1 6.5,6.5M11.5,6.5A1,1 0 0,1 12.5,7.5A1,1 0 0,1 11.5,8.5A1,1 0 0,1 10.5,7.5A1,1 0 0,1 11.5,6.5M16,9C12.69,9 10,11.24 10,14C10,16.76 12.69,19 16,19C16.67,19 17.31,18.92 17.91,18.75L20,20L19.38,18.13C20.95,17.22 22,15.71 22,14C22,11.24 19.31,9 16,9M14,11.5A1,1 0 0,1 15,12.5A1,1 0 0,1 14,13.5A1,1 0 0,1 13,12.5A1,1 0 0,1 14,11.5M18,11.5A1,1 0 0,1 19,12.5A1,1 0 0,1 18,13.5A1,1 0 0,1 17,12.5A1,1 0 0,1 18,11.5Z"></path></svg>Kommentarer
+                            (2)
+                        </a>
+                    </header>
+                    <hr class="dottedLine">
+                    <section class="social">
+                        <a href="#" class="social__button social__button--facebook">
+                            <svg class="social__buttonIcon" viewBox="0 0 60.734 60.733"><path d="M57.378,0.001H3.352C1.502,0.001,0,1.5,0,3.353v54.026c0,1.853,1.502,3.354,3.352,3.354h29.086V37.214h-7.914v-9.167h7.914 v-6.76c0-7.843,4.789-12.116,11.787-12.116c3.355,0,6.232,0.251,7.071,0.36v8.198l-4.854,0.002c-3.805,0-4.539,1.809-4.539,4.462 v5.851h9.078l-1.187,9.166h-7.892v23.52h15.475c1.852,0,3.355-1.503,3.355-3.351V3.351C60.731,1.5,59.23,0.001,57.378,0.001z"/></svg>
+                            <span class="social__buttonText">Del</span>
+                        </a>
+                        <a href="#" class="social__button social__button--twitter">
+                            <svg class="social__buttonIcon" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg>
+                            <span class="social__buttonText">Tweet</span>
+                        </a>
+                        <a href="#" class="social__button social__button--email">
+                            <svg class="social__buttonIcon" viewBox="0 0 24 24"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path></svg>
+                            <span class="social__buttonText">Email</span>
+                        </a>
+                    </section>
+                    <section class="articleContinued__content">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque deserunt iure recusandae. Et sunt maxime molestias modi expedita, corporis quia, distinctio accusantium obcaecati doloribus, consequuntur quam nesciunt! Impedit voluptates
+                            sit voluptate recusandae nesciunt. Qui repellat soluta doloremque magnam totam obcaecati.</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi eum iusto consequuntur, neque velit sunt iste fuga tempore aspernatur eos.</p>
+                        <section class="overlayFade"></section>
+                    </section>
+                    <section class="subscribe">
+                        <p class="subscribe__teaser">Vores abonnenter kalder os kritisk, seriøs og troværdig.</p>
+                        <p class="subscribe__teaser">Se om du er enig...</p>
+                        <a class="subscribe__toArticle" href="#">KLIK HER</a>
+                        <p class="subscribe__hasSubscription">Allerede abonnent? <a class="hasSubscription__login" href="#">Log ind her</a></p>
+                    </section>
+                </section>
+            </article>
+        </main>
+        <section class="carrousel">
+            <header class="colophon colophon--spaceBetween">
+                <h3 class="colophon__one colophon--red colophon--huge colophon--mid">
+                    Fik du læst?
+                    <svg class="colophon__icon colophon__iconGray colophon__SpaceLeft" viewBox="0 0 24 24"><path d="M7,17L10.2,10.2L17,7L13.8,13.8L7,17M12,11.1A0.9,0.9 0 0,0 11.1,12A0.9,0.9 0 0,0 12,12.9A0.9,0.9 0 0,0 12.9,12A0.9,0.9 0 0,0 12,11.1M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"></path></svg>
+                </h3>
+                <p class="colophon__four colophon--red colophon--large colophon--mid">
+                    <a class="colophon__link" href="#" aria-label="Rul til venstre">
+                        <svg class="colophon__icon colophon__iconWhite colophon__iconGrayBack colophon__iconRound" viewBox="0 0 24 24"><path d="M20,10V14H11L14.5,17.5L12.08,19.92L4.16,12L12.08,4.08L14.5,6.5L11,10H20Z"></path></svg>
+                    </a>
+                    <a class="colophon__link" href="#" aria-label="Rul til højre">
+                        <svg class="colophon__icon colophon__iconWhite colophon__iconGrayBack colophon__iconRound colophon__SpaceLeft" viewBox="0 0 24 24"><path d="M4,10V14H13L9.5,17.5L11.92,19.92L19.84,12L11.92,4.08L9.5,6.5L13,10H4Z"></path></svg>
+                    </a>
+                </p>
+            </header>
+            <hr class="dottedLine">
+            <div class="carrousel__grid">
+                <div class="carrousel__one">
+                    <section class="thumbnail">
+                        <img class="thumbnail__image" src="./images/alternativ-forbroedring.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+                <div class="carrousel__two">
+                    <section class="thumbnail">
+                        <img class="thumbnail__image" src="./images/jeg-maatte-ud-paa-det-dybe-vand.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+                <div class="carrousel__three">
+                    <section class="thumbnail">
+                        <img class="thumbnail__image" src="./images/iceage.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+                <div class="carrousel__four">
+                    <section class="thumbnail">
+                        <img class="thumbnail__image" src="./images/under-normale-forhold.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="latestNews">
+            <div class="latestNews__grid">
+                <div class="latestNews__one latestNews__one--spanAll">
+                    <header class="colophon">
+                        <h3 class="colophon__one colophon--red colophon--large colophon--mid colophon__nowrap">
+                            Seneste nyt
+                        </h3>
+                    </header>
+                    <hr class="dottedLine">
+                    <section class="latest">
+                        <section class="latest__row">
+                            <time class="row__time">16:36</time>
+                            <p class="row__title">Slut med møntbetaling i københavnske p-automater</p>
+                        </section>
+                        <section class="latest__row">
+                            <time class="row__time">16:26</time>
+                            <p class="row__title">Energiminister: Afgift på biomasse er forkert vej at gå</p>
+                        </section>
+                        <section class="latest__row">
+                            <time class="row__time">15:45</time>
+                            <p class="row__title">Libanesisk premiereministers parti går en tredjedel tilbage</p>
+                        </section>
+                        <section class="latest__row">
+                            <time class="row__time">15:10</time>
+                            <p class="row__title">Ombudsmand: Offentligheden må se kronprinsens IOC-breve</p>
+                        </section>
+                        <section class="latest__row">
+                            <time class="row__time">15:02</time>
+                            <p class="row__title">WWF: Vildsvinehegn skader andre dyrearter i grænselandet</p>
+                        </section>
+                        <section class="latest__row">
+                            <time class="row__time">14:46</time>
+                            <p class="row__title">Atomaftale med Iran fortsætter også uden USA</p>
+                        </section>
+                        <hr class="dottedLine">
+                        <a class="latest__moreNews" href="#">Flere nyheder &gt;</a>
+                    </section>
+                </div>
+                <section class="latestNews__header">
+                    <header class="colophon colophon--flexEnd">
+                        <a class="colophon__four colophon__link colophon--red colophon--large colophon--mid" href="./index.html">Information.dk</a>
+                    </header>
+                    <hr class="dottedLine">
+                    <div class="latestNews__headerLink">
+                        <a href="#" class="iconLink">
+                            <svg class="iconLink__icon iconLink__icon--gray iconLink__icon--large" viewBox="0 0 24 24"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path></svg>
+                            <span class="iconLink__text">Forsiden lige nu</span>
+                        </a>
+                    </div>
+                </section>
+                <div class="latestNews__two">
+                    <section class="thumbnail">
+                        <header class="colophon">
+                            <span class="colophon__one colophon--red colophon--small colophon--mid">
+                                Abonnement
+                            </span>
+                        </header>
+                        <img class="thumbnail__image" src="./images/gas-er-et-godt-politisk-vaaben.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+                <div class="latestNews__three">
+                    <section class="thumbnail">
+                        <header class="colophon">
 
+                        </header>
+                        <img class="thumbnail__image" src="./images/mand-dig-op-kvinde.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+                <div class="latestNews__four">
+                    <section class="thumbnail">
+                        <header class="colophon">
+
+                        </header>
+                        <p class="thumbnail__text">
+                            Peter Madsen anker kun længden af sin straf
+                        </p>
+                        <p class="thumbnail__teaser">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nostrum aspernatur consectetur
+                        </p>
+                    </section>
+                </div>
+                <div class="latestNews__two">
+                    <section class="thumbnail">
+                        <header class="colophon">
+                            <span class="colophon__one colophon--red colophon--small colophon--mid">
+                                Abonnement
+                            </span>
+                        </header>
+                        <img class="thumbnail__image" src="./images/rapport-fra-norsk-regeringskommision.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+                <div class="latestNews__three">
+                    <section class="thumbnail">
+                        <header class="colophon">
+                            <span class="colophon__one colophon--red colophon--small colophon--mid">
+                                Abonnement
+                            </span>
+                        </header>
+                        <p class="thumbnail__text">
+                            Sådan håndteres offentlige arbejdskonflikter i Sverige og Norge
+                        </p>
+                        <p class="thumbnail__teaser">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam fugit nemo esse beatae, aspernatur facere corrupti culpa debitis perferendis labore exercitationem voluptates quia, molestias vitae explicabo magni porro consequatur sint dolor nesciunt.
+                            Tempore doloremque magni natus ullam repudiandae inventore sunt necessitatibus magnam possimus! Beatae nobis aperiam hic deleniti, quidem similique.
+                        </p>
+                    </section>
+                </div>
+                <div class="latestNews__four">
+                    <section class="thumbnail">
+                        <header class="colophon">
+                            <span class="colophon__one colophon--red colophon--small colophon--mid">
+                                Abonnement
+                            </span>
+                        </header>
+                        <img class="thumbnail__image" src="./images/syrere-er-vendt-tilbage.jpg" alt="Alternativ forbrødring">
+                        <p class="thumbnail__text">
+                            Alternativ forbrødring, eller hvordan lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, reiciendis.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="comments" class="comments">
+            <div class="comments__grid">
+                <div class="comments__recommend">
+                    <header class="colophon">
+                        <h3 class="colophon__one colophon--red colophon--small colophon--mid">
+                            Anbefalinger
+                        </h3>
+                    </header>
+                    <hr class="dottedLine">
+                    <a class="recommend__article" href="#">Anbefal artikel</a>
+                </div>
+                <section class="comments__userComments">
+                    <header class="colophon">
+                        <a class="colophon__one colophon__link colophon--red colophon--small colophon--mid" href="#">Kommentarer</a>
+                    </header>
+                    <hr class="dottedLine">
+                    <section class="userComments__comment">
+                        <address class="userComments__user">
+                            <div class="user__image">
+                                <img class="user__imageProfile" src="./images/user-placeholder.jpg" alt="User profile">
+                            </div>
+                            <div class="user__details">
+                                <p class="user__name">Henrik holm hansen</p>
+                                <span class="user__time">07. maj, 2018 - 05:56</span>
+                            </div>
+                        </address>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas eaque quasi, sed labore repellendus perspiciatis porro adipisci laboriosam modi tenetur vel numquam obcaecati incidunt illo nam ipsa omnis molestiae dolore recusandae accusamus similique
+                            ea. Provident dolorum eveniet, dolore ipsum tenetur atque accusamus laboriosam quas sequi excepturi voluptates earum vero quae reiciendis neque eum libero ea necessitatibus expedita perferendis praesentium iste est. Praesentium
+                            numquam, nobis molestiae sed quia nisi a necessitatibus doloribus ducimus amet in, facere dicta voluptatem deserunt dolorem voluptatibus obcaecati rem aperiam explicabo. Praesentium deleniti culpa reiciendis vitae enim maiores
+                            quas rem id, soluta hic suscipit velit ullam eius?
+                        </p>
+                        <a class="userComments__recommend" href="#">Anbefal kommentar</a>
+                    </section>
+                </section>
+                <section class="comments__userComments">
+                    <hr class="dottedLine">
+                    <section class="userComments__comment">
+                        <address class="userComments__user">
+                            <div class="user__image">
+                                <img class="user__imageProfile" src="./images/user-placeholder.jpg" alt="User profile">
+                            </div>
+                            <div class="user__details">
+                                <p class="user__name">Henrik holm hansen</p>
+                                <span class="user__time">07. maj, 2018 - 05:56</span>
+                            </div>
+                        </address>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas eaque quasi, sed labore repellendus perspiciatis porro adipisci laboriosam modi tenetur vel numquam obcaecati incidunt illo nam ipsa omnis molestiae dolore recusandae accusamus similique
+                            ea. Provident dolorum eveniet, dolore ipsum tenetur atque accusamus laboriosam quas sequi excepturi voluptates earum vero quae reiciendis neque eum libero ea necessitatibus expedita perferendis praesentium iste est. Praesentium
+                            numquam, nobis molestiae sed quia nisi a necessitatibus doloribus ducimus amet in, facere dicta voluptatem deserunt dolorem voluptatibus obcaecati rem aperiam explicabo. Praesentium deleniti culpa reiciendis vitae enim maiores
+                            quas rem id, soluta hic suscipit velit ullam eius?
+                        </p>
+                        <a class="userComments__recommend" href="#">Anbefal kommentar</a>
+                    </section>
+                </section>
+                <p class="comments__loginToComment">Du skal være registreret bruger for at kommentere. <a class="loginToComment__link" href="#">Log ind</a> eller <a class="loginToComment__link" href="#">opret bruger</a></p>
+            </div>
+        </section>
+    </div>
+    <footer class="mainFooter">
+        <section class="mainFooter__grid">
+            <div class="grid__item">
+                <section class="footer">
+                    <h3 class="footer__title">Information som E-avis</h3>
+                    <p class="footer__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus nulla rerum maiores magni sunt incidunt ratione aut odit ipsa vero?
+                    </p>
+                    <div class="footer__iconLink">
+                        <a class="iconLink" href="#">
+                            <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 24 24"><path d="M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2Z"></path></svg>
+                            <span class="iconLink__text">Læs e-avisen på din computer</span>
+                        </a>
+                    </div>
+                    <div class="footer__iconLink">
+                        <a class="iconLink" href="#">
+                            <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 24 24"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"></path></svg>
+                            <span class="iconLink__text">Download til Apple</span>
+                        </a>
+                    </div>
+                    <div class="footer__iconLink">
+                        <a class="iconLink" href="#">
+                            <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 24 24"><path d="M15,9A1,1 0 0,1 14,8A1,1 0 0,1 15,7A1,1 0 0,1 16,8A1,1 0 0,1 15,9M9,9A1,1 0 0,1 8,8A1,1 0 0,1 9,7A1,1 0 0,1 10,8A1,1 0 0,1 9,9M16.12,4.37L18.22,2.27L17.4,1.44L15.09,3.75C14.16,3.28 13.11,3 12,3C10.88,3 9.84,3.28 8.91,3.75L6.6,1.44L5.78,2.27L7.88,4.37C6.14,5.64 5,7.68 5,10V11H19V10C19,7.68 17.86,5.64 16.12,4.37M5,16C5,19.86 8.13,23 12,23A7,7 0 0,0 19,16V12H5V16Z"></path></svg>
+                            <span class="iconLink__text">Download til Android</span>
+                        </a>
+                    </div>
+                </section>
+                <section class="footer">
+                    <h3 class="footer__title">Følg avisen</h3>
+                    <div class="footer__iconLink">
+                        <a class="iconLink" href="#">
+                            <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 24 24"><path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"></path></svg>
+                            <span class="iconLink__text">Nyhedsbreve</span>
+                        </a>
+                    </div>
+                    <div class="footer__iconLink">
+                        <a class="iconLink" href="#">
+                            <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 155.139 155.139"><path d="M89.584,155.139V84.378h23.742l3.562-27.585H89.584V39.184 c0-7.984,2.208-13.425,13.67-13.425l14.595-0.006V1.08C115.325,0.752,106.661,0,96.577,0C75.52,0,61.104,12.853,61.104,36.452 v20.341H37.29v27.585h23.814v70.761H89.584z"/></svg>
+                            <span class="iconLink__text">Facebook</span>
+                        </a>
+                    </div>
+                    <div class="footer__iconLink">
+                        <a class="iconLink" href="#">
+                            <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg>
+                            <span class="iconLink__text">Twitter</span>
+                        </a>
+                    </div>
+                    <div class="footer__iconLink">
+                        <a class="iconLink" href="#">
+                            <svg class="iconLink__icon iconLink__icon--black iconLink__icon--large" viewBox="0 0 24 24"><path d="M6.18,15.64A2.18,2.18 0 0,1 8.36,17.82C8.36,19 7.38,20 6.18,20C5,20 4,19 4,17.82A2.18,2.18 0 0,1 6.18,15.64M4,4.44A15.56,15.56 0 0,1 19.56,20H16.73A12.73,12.73 0 0,0 4,7.27V4.44M4,10.1A9.9,9.9 0 0,1 13.9,20H11.07A7.07,7.07 0 0,0 4,12.93V10.1Z"></path></svg>
+                            <span class="iconLink__text">RSS</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <div class="grid__item">
+                <section class="footer">
+                    <img class="footer__newspaper" src="./images/avis.jpg" alt="Dagens avis">
+                </section>
+            </div>
+            <div class="grid__item">
+                <section class="footer">
+                    <h3 class="footer__title">Information hver morgen</h3>
+                    <form class="newsletter">
+                        <label class="newsletter__label" for="email">Tilmeld med din email</label>
+                        <input id="email" class="newsletter__input" type="email" placeholder="Skriv din email her">
+                        <button class="newsletter__submit" type="submit">Tilmeld</button>
+                    </form>
+                </section>
+                <section class="footer">
+                    <h3 class="footer__title">Køb avisen</h3>
+                    <a class="footer__link" href="#">Få et godt tilbud</a>
+                    <a class="footer__link" href="#">Abonnement - selvbetjening</a>
+                    <a class="footer__link" href="#">Abonnementsbetingelser</a>
+                    <a class="footer__link" href="#">Information i løssalg</a>
+                    <a class="footer__link" href="#">Hjælp til information.dk</a>
+                </section>
+            </div>
+            <div class="grid__item">
+                <section class="footer">
+                    <h3 class="footer__title">Om Information</h3>
+                    <a class="footer__link" href="#">Redaktion</a>
+                    <a class="footer__link" href="#">iBureauet</a>
+                    <a class="footer__link" href="#">Besøg Butikken</a>
+                    <a class="footer__link" href="#">Informations Venner</a>
+                    <a class="footer__link" href="#">Ledige stillinger</a>
+                    <a class="footer__link" href="#">Økonomi og ledelse</a>
+                    <a class="footer__link footer__link--space" href="#">Hosted hos Sentia</a>
+                </section>
+            </div>
+        </section>
+        <section class="mainFooter__bottom">
+            <hr class="bottom__line">
+            <address class="bottom__address">
+                Ansvarshavende chefredaktør: Rune Lykkeberg | Dagbladet Information, Store Kongensgade 40C, 1264 København. Telefon: 3369 6000 | CVR: 63058416
+            </address>
+            <div class="bottom__policies">
+                <a class="policies__link" href="#">Privatlivspolitik</a> | <a class="policies__link" href="#">Cookies</a> | <a class="policies__link" href="#">Annoncering</a>
+            </div>
+            <div class="bottom__writeUs">
+                <a class="writeUs__link" href="#">Skriv til os</a>
+            </div>
+        </section>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,76 @@
+.iconLink {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(0, 0%, 16%);
+    transition: filter 300ms, color 300ms;
+}
+
+.iconLink--spaceRight {
+    margin-right: 15px;
+}
+
+.iconLink--spaceLeft {
+    margin-left: 15px;
+}
+
+.iconLink:hover {
+    filter: brightness(1.2);
+    color: hsl(0, 0%, 50%);
+}
+
+.iconLink .iconLink__icon {
+    transition: fill 300ms;
+}
+
+.iconLink:hover .iconLink__icon {
+    fill: hsl(0, 0%, 50%);
+}
+
+.iconLink:hover .iconLink__icon--white {
+    fill: hsl(0, 0%, 90%);
+}
+
+.iconLink__icon {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.iconLink__icon--large {
+    width: 1em;
+    height: 1em;
+}
+
+.iconLink__icon--larger {
+    width: 1.3em;
+    height: 1.3em;
+}
+
+.iconLink__icon--white {
+    fill: hsl(0, 0%, 96%);
+}
+
+.iconLink__icon--gray {
+    fill: hsl(0, 0%, 80%);
+}
+
+.iconLink__icon--black {
+    fill: hsl(0, 0%, 16%);
+}
+
+.iconLink__icon--backGray {
+    background-color: hsl(0, 0%, 60%);
+    padding: 3px;
+}
+
+.iconLink__icon--backTwitter {
+    background-color: #55acee;
+    padding: 3px;
+}
+
+.iconLink__text {
+    font-size: 0.75em;
+}

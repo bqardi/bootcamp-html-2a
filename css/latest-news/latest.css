@@ -1,0 +1,35 @@
+.latest {
+    margin-bottom: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.latest__row {
+    border-top: 1px dotted hsl(0, 0%, 16%);
+    padding-top: 5px;
+}
+
+.latest__row:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+
+.row__time {
+    font-size: 0.6em;
+    color: hsl(0, 0%, 60%);
+    margin: 5px 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row__title {
+    margin: 2px 0 10px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.latest__moreNews {
+    text-decoration: none;
+    color: hsl(0, 0%, 16%);
+    font-size: 0.9em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}

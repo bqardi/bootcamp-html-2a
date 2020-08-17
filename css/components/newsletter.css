@@ -1,0 +1,29 @@
+.newsletter {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.newsletter__label {
+    position: absolute;
+    left: -9999px;
+    border: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.newsletter__input {
+    padding: 9px 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.newsletter__submit {
+    padding: 5px;
+    margin-left: 5px;
+    border: none;
+    color: hsl(0, 0%, 40%);
+    background-color: hsl(0, 0%, 95%);
+}

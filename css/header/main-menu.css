@@ -1,0 +1,17 @@
+@import './menu.css';
+.mainMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid hsl(0, 0%, 95%);
+    box-shadow: 0 2px 4px 1px hsl(0, 0%, 90%);
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 620px) {
+    .mainMenu {
+        border-top: none;
+        box-shadow: none;
+        margin-bottom: 0;
+    }
+}

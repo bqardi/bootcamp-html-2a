@@ -1,0 +1,12 @@
+@import '../components/social.css';
+@import '../components/overlay-fade.css';
+@import './article-subscribe.css';
+.articleContinued {
+    grid-area: content;
+}
+
+.articleContinued__content {
+    position: relative;
+    z-index: -1;
+    font-size: 1.1em;
+}

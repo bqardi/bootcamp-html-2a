@@ -1,0 +1,50 @@
+.coverPhoto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-area: cover;
+    margin: 0 0 30px;
+}
+
+.coverPhoto__caption {
+    grid-column: 1/2;
+    font-size: 0.85em;
+    color: hsl(0, 0%, 20%);
+    padding-right: 20px;
+    text-align: right;
+}
+
+.coverPhoto__image {
+    width: 100%;
+    grid-column: 2/5;
+}
+
+.caption__photographer {
+    color: hsl(0, 0%, 16%);
+    font-size: 1.2em;
+    font-style: normal;
+}
+
+.caption__photographer--right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+    .coverPhoto {
+        grid-template-columns: 1fr;
+    }
+    .coverPhoto__caption {
+        grid-column: 1/2;
+        padding-right: 0;
+        text-align: left;
+        order: 1;
+    }
+    .coverPhoto__image {
+        width: 100%;
+        grid-column: 1/2;
+        order: 0;
+    }
+    .caption__photographer--right {
+        justify-content: flex-start;
+    }
+}
